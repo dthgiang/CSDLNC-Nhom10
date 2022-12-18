@@ -11,13 +11,15 @@ Chung:
   + Form 1: Đăng nhập
  
  Khách hàng:
-Form 2 -> 7
+Form 2 -> 7 + Form 14, 15
   + Form 2: Giao diện khách hàng
   + Form 3: Tìm kiếm cửa hàng(đối tác)
   + Form 4: Chọn hình thức thanh toán
   + Form 5: Theo dõi đơn hàng
   + Form 6: Đánh giá đơn hàng
   + Form 7: Chọn món
+  + Form 14: Xem thông tin cá nhân
+  + Form 15: Chỉnh sửa thông tin cá nhân
 
   Tài xế:
 Form 8: Tài xế xem danh sách đơn hàng, chuyển trạng thái đơn, hủy đơn
