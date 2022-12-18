@@ -63,6 +63,16 @@ namespace GiaoDien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap avatardefault_to {
+            get {
+                object obj = ResourceManager.GetObject("avatardefault_to", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bún_đậu {
             get {
                 object obj = ResourceManager.GetObject("bún-đậu", resourceCulture);

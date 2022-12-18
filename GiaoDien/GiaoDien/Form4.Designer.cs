@@ -70,11 +70,11 @@ namespace GiaoDien
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.button1.Location = new System.Drawing.Point(420, 302);
+            this.button1.Location = new System.Drawing.Point(414, 302);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 25);
+            this.button1.Size = new System.Drawing.Size(76, 25);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Tiếp tục";
+            this.button1.Text = "Xác nhận";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
