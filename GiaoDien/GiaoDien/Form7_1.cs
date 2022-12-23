@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GiaoDien
 {
-    public partial class Form15 : Form
+    public partial class Form7_1 : Form
     {
-        public Form15()
+        public Form7_1()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

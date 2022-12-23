@@ -50,6 +50,7 @@ namespace GiaoDien
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::GiaoDien.Properties.Resources.dai_hoc_khoa_hoc_tu_nhien_dhqg_hcm;
             this.pictureBox1.Location = new System.Drawing.Point(290, 14);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(98, 86);

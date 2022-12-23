@@ -33,13 +33,14 @@ namespace GiaoDien
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
+            this.btnDanhGiaDonHang = new System.Windows.Forms.Button();
+            this.btnTheoDoiDonHang = new System.Windows.Forms.Button();
+            this.btnLichSuDonHang = new System.Windows.Forms.Button();
+            this.btnTatCaCuaHang = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTiemKiemMonAn = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,9 +52,10 @@ namespace GiaoDien
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnThongTinChiTiet = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -61,19 +63,19 @@ namespace GiaoDien
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightCyan;
+            this.panel1.Controls.Add(this.btnThongTinChiTiet);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnDangXuat);
+            this.panel1.Controls.Add(this.btnDanhGiaDonHang);
+            this.panel1.Controls.Add(this.btnTheoDoiDonHang);
+            this.panel1.Controls.Add(this.btnLichSuDonHang);
+            this.panel1.Controls.Add(this.btnTatCaCuaHang);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
@@ -92,75 +94,85 @@ namespace GiaoDien
             this.label3.TabIndex = 10;
             this.label3.Text = "Phiên bản 5.26.0";
             // 
-            // button5
+            // btnDangXuat
             // 
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.LightCyan;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button5.Location = new System.Drawing.Point(43, 304);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(96, 29);
-            this.button5.TabIndex = 9;
-            this.button5.Text = "Đăng xuất";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnDangXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDangXuat.FlatAppearance.BorderColor = System.Drawing.Color.LightCyan;
+            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangXuat.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnDangXuat.ForeColor = System.Drawing.Color.CadetBlue;
+            this.btnDangXuat.Location = new System.Drawing.Point(43, 333);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(96, 29);
+            this.btnDangXuat.TabIndex = 9;
+            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnDanhGiaDonHang
             // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.LightCyan;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button3.Location = new System.Drawing.Point(20, 261);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(151, 37);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Đánh giá đơn hàng";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDanhGiaDonHang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDanhGiaDonHang.FlatAppearance.BorderColor = System.Drawing.Color.LightCyan;
+            this.btnDanhGiaDonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDanhGiaDonHang.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnDanhGiaDonHang.ForeColor = System.Drawing.Color.CadetBlue;
+            this.btnDanhGiaDonHang.Location = new System.Drawing.Point(20, 248);
+            this.btnDanhGiaDonHang.Name = "btnDanhGiaDonHang";
+            this.btnDanhGiaDonHang.Size = new System.Drawing.Size(151, 37);
+            this.btnDanhGiaDonHang.TabIndex = 8;
+            this.btnDanhGiaDonHang.Text = "Đánh giá đơn hàng";
+            this.btnDanhGiaDonHang.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnTheoDoiDonHang
             // 
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.LightCyan;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button4.Location = new System.Drawing.Point(17, 217);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(154, 38);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Theo dõi đơn hàng";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnTheoDoiDonHang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTheoDoiDonHang.FlatAppearance.BorderColor = System.Drawing.Color.LightCyan;
+            this.btnTheoDoiDonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTheoDoiDonHang.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnTheoDoiDonHang.ForeColor = System.Drawing.Color.CadetBlue;
+            this.btnTheoDoiDonHang.Location = new System.Drawing.Point(17, 204);
+            this.btnTheoDoiDonHang.Name = "btnTheoDoiDonHang";
+            this.btnTheoDoiDonHang.Size = new System.Drawing.Size(154, 38);
+            this.btnTheoDoiDonHang.TabIndex = 7;
+            this.btnTheoDoiDonHang.Text = "Theo dõi đơn hàng";
+            this.btnTheoDoiDonHang.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnLichSuDonHang
             // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.LightCyan;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button2.Location = new System.Drawing.Point(3, 173);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(174, 38);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Hình thức thanh toán";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnLichSuDonHang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLichSuDonHang.FlatAppearance.BorderColor = System.Drawing.Color.LightCyan;
+            this.btnLichSuDonHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLichSuDonHang.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnLichSuDonHang.ForeColor = System.Drawing.Color.CadetBlue;
+            this.btnLichSuDonHang.Location = new System.Drawing.Point(3, 160);
+            this.btnLichSuDonHang.Name = "btnLichSuDonHang";
+            this.btnLichSuDonHang.Size = new System.Drawing.Size(174, 38);
+            this.btnLichSuDonHang.TabIndex = 6;
+            this.btnLichSuDonHang.Text = "Lịch sử đơn hàng";
+            this.btnLichSuDonHang.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnTatCaCuaHang
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightCyan;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button1.Location = new System.Drawing.Point(29, 136);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 31);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Tất cả cửa hàng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTatCaCuaHang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnTatCaCuaHang.FlatAppearance.BorderColor = System.Drawing.Color.LightCyan;
+            this.btnTatCaCuaHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTatCaCuaHang.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnTatCaCuaHang.ForeColor = System.Drawing.Color.CadetBlue;
+            this.btnTatCaCuaHang.Location = new System.Drawing.Point(29, 123);
+            this.btnTatCaCuaHang.Name = "btnTatCaCuaHang";
+            this.btnTatCaCuaHang.Size = new System.Drawing.Size(131, 31);
+            this.btnTatCaCuaHang.TabIndex = 1;
+            this.btnTatCaCuaHang.Text = "Tất cả cửa hàng";
+            this.btnTatCaCuaHang.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GiaoDien.Properties.Resources.dai_hoc_khoa_hoc_tu_nhien_dhqg_hcm;
+            this.pictureBox1.Location = new System.Drawing.Point(51, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(83, 74);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // vScrollBar1
             // 
@@ -169,17 +181,17 @@ namespace GiaoDien
             this.vScrollBar1.Size = new System.Drawing.Size(17, 391);
             this.vScrollBar1.TabIndex = 5;
             // 
-            // textBox1
+            // txtTiemKiemMonAn
             // 
-            this.textBox1.AllowDrop = true;
-            this.textBox1.BackColor = System.Drawing.Color.GhostWhite;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox1.Location = new System.Drawing.Point(365, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(286, 25);
-            this.textBox1.TabIndex = 6;
+            this.txtTiemKiemMonAn.AllowDrop = true;
+            this.txtTiemKiemMonAn.BackColor = System.Drawing.Color.GhostWhite;
+            this.txtTiemKiemMonAn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtTiemKiemMonAn.ForeColor = System.Drawing.Color.DimGray;
+            this.txtTiemKiemMonAn.Location = new System.Drawing.Point(365, 72);
+            this.txtTiemKiemMonAn.Name = "txtTiemKiemMonAn";
+            this.txtTiemKiemMonAn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtTiemKiemMonAn.Size = new System.Drawing.Size(286, 25);
+            this.txtTiemKiemMonAn.TabIndex = 6;
             // 
             // label1
             // 
@@ -293,16 +305,6 @@ namespace GiaoDien
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GiaoDien.Properties.Resources.dai_hoc_khoa_hoc_tu_nhien_dhqg_hcm;
-            this.pictureBox1.Location = new System.Drawing.Point(51, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(83, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::GiaoDien.Properties.Resources.location_icon;
@@ -312,6 +314,20 @@ namespace GiaoDien
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
+            // 
+            // btnThongTinChiTiet
+            // 
+            this.btnThongTinChiTiet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnThongTinChiTiet.FlatAppearance.BorderColor = System.Drawing.Color.LightCyan;
+            this.btnThongTinChiTiet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongTinChiTiet.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnThongTinChiTiet.ForeColor = System.Drawing.Color.CadetBlue;
+            this.btnThongTinChiTiet.Location = new System.Drawing.Point(20, 291);
+            this.btnThongTinChiTiet.Name = "btnThongTinChiTiet";
+            this.btnThongTinChiTiet.Size = new System.Drawing.Size(151, 37);
+            this.btnThongTinChiTiet.TabIndex = 11;
+            this.btnThongTinChiTiet.Text = "Thông tin chi tiết";
+            this.btnThongTinChiTiet.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
@@ -330,7 +346,7 @@ namespace GiaoDien
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTiemKiemMonAn);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox3);
@@ -340,6 +356,7 @@ namespace GiaoDien
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -347,7 +364,6 @@ namespace GiaoDien
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -359,15 +375,15 @@ namespace GiaoDien
         private Panel panel1;
         private PictureBox pictureBox1;
         private VScrollBar vScrollBar1;
-        private TextBox textBox1;
+        private TextBox txtTiemKiemMonAn;
         private Label label1;
         private Label label2;
         private PictureBox pictureBox2;
-        private Button button1;
-        private Button button5;
-        private Button button3;
-        private Button button4;
-        private Button button2;
+        private Button btnTatCaCuaHang;
+        private Button btnDangXuat;
+        private Button btnDanhGiaDonHang;
+        private Button btnTheoDoiDonHang;
+        private Button btnLichSuDonHang;
         private Label label3;
         private Label label5;
         private PictureBox pictureBox3;
@@ -378,5 +394,6 @@ namespace GiaoDien
         private PictureBox pictureBox8;
         private PictureBox pictureBox9;
         private TextBox textBox2;
+        private Button btnThongTinChiTiet;
     }
 }

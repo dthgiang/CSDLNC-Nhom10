@@ -67,6 +67,7 @@
             this.menuStrip2.Size = new System.Drawing.Size(554, 27);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
+            this.menuStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip2_ItemClicked);
             // 
             // chỉnhSửaThôngTinToolStripMenuItem
             // 
@@ -159,13 +160,14 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(554, 354);
+            this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip2);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form9";
             this.Text = "ĐỐI TÁC";
             this.menuStrip2.ResumeLayout(false);

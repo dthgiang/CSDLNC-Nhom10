@@ -34,13 +34,16 @@ namespace GiaoDien
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblPhiVanChuyen = new System.Windows.Forms.Label();
+            this.lblTongDonHang = new System.Windows.Forms.Label();
+            this.btnHuy = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -70,11 +73,11 @@ namespace GiaoDien
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.button1.Location = new System.Drawing.Point(414, 302);
+            this.button1.Location = new System.Drawing.Point(154, 441);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 25);
+            this.button1.Size = new System.Drawing.Size(141, 28);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Xác nhận";
+            this.button1.Text = "Hoàn tất đơn hàng";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -91,20 +94,20 @@ namespace GiaoDien
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label2.Location = new System.Drawing.Point(53, 303);
+            this.label2.Location = new System.Drawing.Point(75, 322);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 20);
+            this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Nhập mật khẩu để xác nhận:";
+            this.label2.Text = "Nhập địa chỉ:";
             // 
-            // textBox1
+            // txtDiaChi
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.textBox1.Location = new System.Drawing.Point(255, 302);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '●';
-            this.textBox1.Size = new System.Drawing.Size(139, 25);
-            this.textBox1.TabIndex = 4;
+            this.txtDiaChi.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtDiaChi.Location = new System.Drawing.Point(177, 322);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.PasswordChar = '●';
+            this.txtDiaChi.Size = new System.Drawing.Size(278, 25);
+            this.txtDiaChi.TabIndex = 4;
             // 
             // pictureBox6
             // 
@@ -168,12 +171,46 @@ namespace GiaoDien
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
+            // lblPhiVanChuyen
+            // 
+            this.lblPhiVanChuyen.AutoSize = true;
+            this.lblPhiVanChuyen.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhiVanChuyen.Location = new System.Drawing.Point(173, 367);
+            this.lblPhiVanChuyen.Name = "lblPhiVanChuyen";
+            this.lblPhiVanChuyen.Size = new System.Drawing.Size(96, 17);
+            this.lblPhiVanChuyen.TabIndex = 12;
+            this.lblPhiVanChuyen.Text = "Phí vận chuyển:";
+            this.lblPhiVanChuyen.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // lblTongDonHang
+            // 
+            this.lblTongDonHang.AutoSize = true;
+            this.lblTongDonHang.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTongDonHang.Location = new System.Drawing.Point(173, 394);
+            this.lblTongDonHang.Name = "lblTongDonHang";
+            this.lblTongDonHang.Size = new System.Drawing.Size(105, 17);
+            this.lblTongDonHang.TabIndex = 13;
+            this.lblTongDonHang.Text = "Tổng đơn hàng: ";
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnHuy.Location = new System.Drawing.Point(301, 441);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(107, 28);
+            this.btnHuy.TabIndex = 14;
+            this.btnHuy.Text = "Hủy đơn hàng";
+            this.btnHuy.UseVisualStyleBackColor = true;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(563, 348);
+            this.ClientSize = new System.Drawing.Size(563, 493);
+            this.Controls.Add(this.btnHuy);
+            this.Controls.Add(this.lblTongDonHang);
+            this.Controls.Add(this.lblPhiVanChuyen);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.checkedListBox1);
@@ -181,7 +218,7 @@ namespace GiaoDien
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDiaChi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -203,7 +240,7 @@ namespace GiaoDien
         private Button button1;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txtDiaChi;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
@@ -211,5 +248,8 @@ namespace GiaoDien
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private CheckedListBox checkedListBox1;
+        private Label lblPhiVanChuyen;
+        private Label lblTongDonHang;
+        private Button btnHuy;
     }
 }

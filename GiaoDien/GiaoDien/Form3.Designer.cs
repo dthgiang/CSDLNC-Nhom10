@@ -30,23 +30,17 @@ namespace GiaoDien
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnTimKiemCuaHang = new System.Windows.Forms.Button();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnTroVe = new System.Windows.Forms.Button();
+            this.cbbTimKiemCuaHang = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(179, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(347, 20);
-            this.textBox1.TabIndex = 0;
             // 
             // pictureBox1
             // 
@@ -68,15 +62,15 @@ namespace GiaoDien
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // button1
+            // btnTimKiemCuaHang
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.button1.Location = new System.Drawing.Point(261, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 29);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Tìm kiếm cửa hàng";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTimKiemCuaHang.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnTimKiemCuaHang.Location = new System.Drawing.Point(261, 143);
+            this.btnTimKiemCuaHang.Name = "btnTimKiemCuaHang";
+            this.btnTimKiemCuaHang.Size = new System.Drawing.Size(149, 29);
+            this.btnTimKiemCuaHang.TabIndex = 3;
+            this.btnTimKiemCuaHang.Text = "Tìm kiếm cửa hàng";
+            this.btnTimKiemCuaHang.UseVisualStyleBackColor = true;
             // 
             // vScrollBar1
             // 
@@ -93,35 +87,53 @@ namespace GiaoDien
             this.dataGridView1.Size = new System.Drawing.Size(657, 150);
             this.dataGridView1.TabIndex = 5;
             // 
+            // btnTroVe
+            // 
+            this.btnTroVe.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnTroVe.Location = new System.Drawing.Point(282, 352);
+            this.btnTroVe.Name = "btnTroVe";
+            this.btnTroVe.Size = new System.Drawing.Size(100, 29);
+            this.btnTroVe.TabIndex = 6;
+            this.btnTroVe.Text = "Trở về";
+            this.btnTroVe.UseVisualStyleBackColor = true;
+            // 
+            // cbbTimKiemCuaHang
+            // 
+            this.cbbTimKiemCuaHang.FormattingEnabled = true;
+            this.cbbTimKiemCuaHang.Location = new System.Drawing.Point(180, 109);
+            this.cbbTimKiemCuaHang.Name = "cbbTimKiemCuaHang";
+            this.cbbTimKiemCuaHang.Size = new System.Drawing.Size(347, 21);
+            this.cbbTimKiemCuaHang.TabIndex = 7;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(689, 347);
+            this.ClientSize = new System.Drawing.Size(689, 392);
+            this.Controls.Add(this.cbbTimKiemCuaHang);
+            this.Controls.Add(this.btnTroVe);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.vScrollBar1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnTimKiemCuaHang);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
             this.Name = "Form3";
             this.Text = "CỬA HÀNG";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private TextBox textBox1;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button button1;
+        private Button btnTimKiemCuaHang;
         private VScrollBar vScrollBar1;
         private DataGridView dataGridView1;
+        private Button btnTroVe;
+        private ComboBox cbbTimKiemCuaHang;
     }
 }

@@ -33,12 +33,12 @@ namespace GiaoDien
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.txtTenDangNhap = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.btnTiepTuc = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnDangKy = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -65,33 +65,34 @@ namespace GiaoDien
             this.label6.TabIndex = 1;
             this.label6.Text = "Mật khẩu";
             // 
-            // textBox3
+            // txtTenDangNhap
             // 
-            this.textBox3.Location = new System.Drawing.Point(351, 172);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(222, 20);
-            this.textBox3.TabIndex = 2;
+            this.txtTenDangNhap.Location = new System.Drawing.Point(351, 172);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Size = new System.Drawing.Size(222, 20);
+            this.txtTenDangNhap.TabIndex = 2;
             // 
-            // textBox4
+            // txtMatKhau
             // 
-            this.textBox4.Location = new System.Drawing.Point(351, 208);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(222, 20);
-            this.textBox4.TabIndex = 3;
+            this.txtMatKhau.Location = new System.Drawing.Point(351, 208);
+            this.txtMatKhau.Name = "txtMatKhau";
+            this.txtMatKhau.Size = new System.Drawing.Size(222, 20);
+            this.txtMatKhau.TabIndex = 3;
             // 
-            // button5
+            // btnTiepTuc
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button5.Location = new System.Drawing.Point(218, 246);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(355, 28);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Tiếp tục";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnTiepTuc.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnTiepTuc.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnTiepTuc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTiepTuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTiepTuc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnTiepTuc.Location = new System.Drawing.Point(218, 246);
+            this.btnTiepTuc.Name = "btnTiepTuc";
+            this.btnTiepTuc.Size = new System.Drawing.Size(355, 28);
+            this.btnTiepTuc.TabIndex = 4;
+            this.btnTiepTuc.Text = "Tiếp tục";
+            this.btnTiepTuc.UseVisualStyleBackColor = false;
+            this.btnTiepTuc.Click += new System.EventHandler(this.button5_Click);
             // 
             // label7
             // 
@@ -104,27 +105,27 @@ namespace GiaoDien
             this.label7.Text = "HOẶC";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // button6
+            // btnDangKy
             // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(290, 347);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(100, 33);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Đăng Ký";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnDangKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangKy.Location = new System.Drawing.Point(290, 347);
+            this.btnDangKy.Name = "btnDangKy";
+            this.btnDangKy.Size = new System.Drawing.Size(100, 33);
+            this.btnDangKy.TabIndex = 6;
+            this.btnDangKy.Text = "Đăng Ký";
+            this.btnDangKy.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnThoat
             // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(402, 347);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(100, 33);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "Thoát";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Location = new System.Drawing.Point(402, 347);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(100, 33);
+            this.btnThoat.TabIndex = 7;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -156,12 +157,12 @@ namespace GiaoDien
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnDangKy);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.btnTiepTuc);
+            this.Controls.Add(this.txtMatKhau);
+            this.Controls.Add(this.txtTenDangNhap);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -188,12 +189,12 @@ namespace GiaoDien
         private PictureBox pictureBox1;
         private Label label5;
         private Label label6;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private Button button5;
+        private TextBox txtTenDangNhap;
+        private TextBox txtMatKhau;
+        private Button btnTiepTuc;
         private Label label7;
-        private Button button6;
-        private Button button7;
+        private Button btnDangKy;
+        private Button btnThoat;
         private Label label8;
         private PictureBox pictureBox2;
     }

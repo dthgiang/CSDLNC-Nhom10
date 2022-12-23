@@ -21,3 +21,10 @@ D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\Gi
 D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form8.resources
 D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form12.resources
 D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form13.resources
+D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form14.resources
+D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form15.resources
+D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form16.resources
+D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form7_1.resources
+D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form7_2.resources
+D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form8_1.resources
+D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form8_2.resources

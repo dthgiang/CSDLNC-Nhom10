@@ -26,5 +26,10 @@ namespace GiaoDien
         {
 
         }
+
+        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
