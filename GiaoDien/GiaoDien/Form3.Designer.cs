@@ -36,7 +36,7 @@ namespace GiaoDien
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnTroVe = new System.Windows.Forms.Button();
-            this.cbbTimKiemCuaHang = new System.Windows.Forms.ComboBox();
+            this.cbbChiNhanh = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -97,13 +97,13 @@ namespace GiaoDien
             this.btnTroVe.Text = "Trở về";
             this.btnTroVe.UseVisualStyleBackColor = true;
             // 
-            // cbbTimKiemCuaHang
+            // cbbChiNhanh
             // 
-            this.cbbTimKiemCuaHang.FormattingEnabled = true;
-            this.cbbTimKiemCuaHang.Location = new System.Drawing.Point(180, 109);
-            this.cbbTimKiemCuaHang.Name = "cbbTimKiemCuaHang";
-            this.cbbTimKiemCuaHang.Size = new System.Drawing.Size(347, 21);
-            this.cbbTimKiemCuaHang.TabIndex = 7;
+            this.cbbChiNhanh.FormattingEnabled = true;
+            this.cbbChiNhanh.Location = new System.Drawing.Point(180, 109);
+            this.cbbChiNhanh.Name = "cbbChiNhanh";
+            this.cbbChiNhanh.Size = new System.Drawing.Size(347, 21);
+            this.cbbChiNhanh.TabIndex = 7;
             // 
             // Form3
             // 
@@ -111,7 +111,7 @@ namespace GiaoDien
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(689, 392);
-            this.Controls.Add(this.cbbTimKiemCuaHang);
+            this.Controls.Add(this.cbbChiNhanh);
             this.Controls.Add(this.btnTroVe);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.vScrollBar1);
@@ -120,6 +120,7 @@ namespace GiaoDien
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form3";
             this.Text = "CỬA HÀNG";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -134,6 +135,6 @@ namespace GiaoDien
         private VScrollBar vScrollBar1;
         private DataGridView dataGridView1;
         private Button btnTroVe;
-        private ComboBox cbbTimKiemCuaHang;
+        private ComboBox cbbChiNhanh;
     }
 }

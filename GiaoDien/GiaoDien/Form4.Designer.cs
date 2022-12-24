@@ -128,7 +128,7 @@ namespace GiaoDien
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 10;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+
             // 
             // pictureBox4
             // 
@@ -149,7 +149,7 @@ namespace GiaoDien
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+
             // 
             // pictureBox2
             // 
@@ -180,7 +180,7 @@ namespace GiaoDien
             this.lblPhiVanChuyen.Size = new System.Drawing.Size(96, 17);
             this.lblPhiVanChuyen.TabIndex = 12;
             this.lblPhiVanChuyen.Text = "Phí vận chuyển:";
-            this.lblPhiVanChuyen.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // lblTongDonHang
             // 
@@ -224,6 +224,7 @@ namespace GiaoDien
             this.Controls.Add(this.button1);
             this.Name = "Form4";
             this.Text = "HÌNH THỨC THANH TOÁN";
+
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

@@ -53,7 +53,6 @@ namespace GiaoDien
             this.label5.Size = new System.Drawing.Size(105, 18);
             this.label5.TabIndex = 0;
             this.label5.Text = "Tên đăng nhập";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -92,7 +91,7 @@ namespace GiaoDien
             this.btnTiepTuc.TabIndex = 4;
             this.btnTiepTuc.Text = "Tiếp tục";
             this.btnTiepTuc.UseVisualStyleBackColor = false;
-            this.btnTiepTuc.Click += new System.EventHandler(this.button5_Click);
+            this.btnTiepTuc.Click += new System.EventHandler(this.btnTiepTuc_Click);
             // 
             // label7
             // 
@@ -103,7 +102,6 @@ namespace GiaoDien
             this.label7.Size = new System.Drawing.Size(37, 13);
             this.label7.TabIndex = 5;
             this.label7.Text = "HOẶC";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // btnDangKy
             // 
@@ -115,6 +113,7 @@ namespace GiaoDien
             this.btnDangKy.TabIndex = 6;
             this.btnDangKy.Text = "Đăng Ký";
             this.btnDangKy.UseVisualStyleBackColor = true;
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
             // btnThoat
             // 
@@ -154,7 +153,7 @@ namespace GiaoDien
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(805, 627);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnThoat);
@@ -167,7 +166,8 @@ namespace GiaoDien
             this.Controls.Add(this.label5);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ĐĂNG NHẬP";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

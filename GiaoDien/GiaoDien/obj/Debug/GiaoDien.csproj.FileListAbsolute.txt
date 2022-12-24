@@ -28,3 +28,6 @@ D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\Gi
 D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form7_2.resources
 D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form8_1.resources
 D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form8_2.resources
+D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form1_1.resources
+D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form2_1.resources
+D:\Study\HOC KY 1 - HTTT2022\CSDLNC\CSDLNC-Nhom10\GiaoDien\GiaoDien\obj\Debug\GiaoDien.Form3_1.resources
