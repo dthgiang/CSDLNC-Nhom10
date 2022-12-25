@@ -36,6 +36,7 @@ namespace GiaoDien
         private void quảnLíDToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form11 form = new Form11();
+            form.id_doitac = id_doitac;
             form.Show();
         }
 
