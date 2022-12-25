@@ -67,6 +67,16 @@ namespace GiaoDien
                     this.Hide();
                 }
 
+                else if (loaitaikhoan == "Doi tac")
+                {
+
+                    String id_doitac = reader["madoitac"].ToString();
+                    Form9 form2 = new Form9();
+                    form2.id_doitac = id_doitac;
+                    //form2.id_f2 = id;
+                    form2.Show();
+                    this.Hide();
+                }
             }
             else
                 MessageBox.Show("Not found !!!");
