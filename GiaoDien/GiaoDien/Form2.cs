@@ -17,11 +17,12 @@ namespace GiaoDien
         public String id_khachhang;
         SqlConnection _connection = null;
         SqlCommand _command = null;
-        String _connectionString = "";
+        String connectionString = "";
         public Form2()
         {
             InitializeComponent();
-            _connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=DOAN;Integrated Security=True";
+            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
+
         }
 
 
@@ -36,37 +37,37 @@ namespace GiaoDien
 
         private void btnLichSuDonHang_Click(object sender, EventArgs e)
         {
-            Form9 form9 = new Form9();
-            //form9.id_khachhang = id_khachhang;
-            form9.Show();
-            this.Close();
+            Form7_2 f = new Form7_2();
+            f.id_khachhang = id_khachhang;
+            f.Show();
+            this.Hide();
         }
 
         private void btnTheoDoiDonHang_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();
-            //form6.id_khachhang = id_khachhang;
-            form6.Show();
-            this.Close();
+            Form5 f = new Form5();
+            f.id_khachhang = id_khachhang;
+            f.Show();
+            this.Hide();
 
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             String monan = txtTiemKiemMonAn.Text;
-            MessageBox.Show(monan);
-            Form8 form8 = new Form8();
-            //form8.monan = monan;
-            form8.Show();
-            this.Close();
+            Form7_1 f = new Form7_1();
+            f.monan = monan;
+            f.id_khachhang = id_khachhang;
+            f.Show();
+            this.Hide();
         }
 
         private void btnDanhGia_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
-            //form7.id_khachhang = id_khachhang;
-            form7.Show();
-            this.Close();
+            Form6 f = new Form6();
+            f.id_khachhang = id_khachhang;
+            f.Show();
+            this.Hide();
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
@@ -78,10 +79,15 @@ namespace GiaoDien
 
         private void btnThongTinChiTiet_Click(object sender, EventArgs e)
         {
-            Form2_1 form7 = new Form2_1();
-            form7.id_khachhang = id_khachhang;
-            form7.Show();
+            Form2_1 f = new Form2_1();
+            f.id_khachhang = id_khachhang;
+            f.Show();
             this.Close();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

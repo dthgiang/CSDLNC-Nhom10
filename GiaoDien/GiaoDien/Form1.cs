@@ -19,7 +19,7 @@ namespace GiaoDien
         public Form1()
         {
             InitializeComponent();
-            connectionString = @"Data Source=MSI;Initial Catalog=CSDLNC2;Integrated Security=True";
+            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
         }
 
         private void btnTiepTuc_Click(object sender, EventArgs e)
@@ -47,7 +47,26 @@ namespace GiaoDien
                     form2.Show();
                     this.Hide();
                 }
-                
+                else if (loaitaikhoan == "Nhan vien")
+                {
+                    String id_nhanvien = reader["manhanvien"].ToString();
+                    Form16 form2 = new Form16();
+                    form2.id_nhanvien = id_nhanvien;
+                    //form2.id_f2 = id;
+                    form2.Show();
+                    this.Hide();
+                }
+                else if (loaitaikhoan == "Tai xe")
+                {
+
+                    String id_taixe  = reader["mataixe"].ToString();
+                    Form8 form2 = new Form8();
+                    form2.id_taixe = id_taixe;
+                    //form2.id_f2 = id;
+                    form2.Show();
+                    this.Hide();
+                }
+
             }
             else
                 MessageBox.Show("Not found !!!");
@@ -65,6 +84,11 @@ namespace GiaoDien
         {
             Form1_1 form1_1 = new Form1_1();
             form1_1.ShowDialog();
+            this.Close();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

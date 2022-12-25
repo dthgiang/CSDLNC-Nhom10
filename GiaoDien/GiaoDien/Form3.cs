@@ -21,8 +21,8 @@ namespace GiaoDien
         public Form3()
         {
             InitializeComponent();
-            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=DOAN;Integrated Security=True";
-            dataGridView1.AutoGenerateColumns = false;
+            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
+            //dataGridView1.AutoGenerateColumns = false;
 
         }
 
@@ -30,26 +30,27 @@ namespace GiaoDien
         {
 
             SqlConnection connection = new SqlConnection(connectionString);
-            SqlDataAdapter adapter = new SqlDataAdapter("select top(50) madoitac,tendoitac, ratetb from doitac", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter("select top(50) MaDoiTac,TenDoiTac, RateTB from DoiTac", connection);
             DataTable table = new DataTable();
             adapter.Fill(table);
-            cbbChiNhanh.ValueMember = "madoitac";
-            cbbChiNhanh.DisplayMember = "tendoitac";
+            cbbChiNhanh.ValueMember = "MaDoiTac";
+            cbbChiNhanh.DisplayMember = "TenDoiTac";
             cbbChiNhanh.DataSource = table;
             cbbChiNhanh.SelectedIndex = -1;
+
+            dataGridView1.DataSource = table;
 
         }
 
         private void btnTimKiemCuahang_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form3_1 form3_1 = new Form3_1();
+            Form7 f = new Form7();
             DataRowView row = (DataRowView)cbbChiNhanh.SelectedItem;
-            form3_1.tenquan = (String)row.Row["tendoitac"];
-            form3_1.id_doitac = (String)row.Row["madoitac"];
-            form3_1.id_khachhang = id_khachhang;
-            form3_1.Show();
-
+            f.tenquan = (String)row.Row["TenDoiTac"];
+            f.id_doitac = (String)row.Row["MaDoiTac"];
+            f.id_khachhang = id_khachhang;
+            f.Show();
+            this.Close();
         }
 
         private void btnTroVe_Click(object sender, EventArgs e)
@@ -59,5 +60,7 @@ namespace GiaoDien
             form2.Show();
             this.Close();
         }
+
+
     }
 }

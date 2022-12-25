@@ -23,13 +23,26 @@ namespace GiaoDien
         public Form4()
         {
             InitializeComponent();
-            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=DOAN;Integrated Security=True";
+            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
+
         }
         public string id_donhang;
-        private void Form5_Load(object sender, EventArgs e)
+        private void Form4_Load(object sender, EventArgs e)
         {
-            lblTongDonHang.Text = tongdonhang;
-            lblPhiVanChuyen.Text = phivanchuyen;
+            
+            _connection = new SqlConnection(connectionString);
+            _connection.Open();
+            String sql = "select PhiDonHang, PhiVanChuyen from DonHang where MaDonHang='"+id_donhang+"'";
+            _command = new SqlCommand(sql, _connection);
+            _command.Connection = _connection;
+            SqlDataReader reader = _command.ExecuteReader();
+            if (reader.Read())
+            {
+                tongdonhang = reader["PhiDonHang"].ToString() ;
+                phivanchuyen = reader["PhiVanChuyen"].ToString();
+            }
+            lblTongDonHang.Text ="Tổng đơn hang: " +tongdonhang;
+            lblPhiVanChuyen.Text ="Phí vận chuyển" +phivanchuyen;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,10 +57,15 @@ namespace GiaoDien
             }
             _connection = new SqlConnection(connectionString);
             _connection.Open();
-            String sql = "exec hoantatdonhang '" + id_donhang + "',N'" + selectedItems + "',N'" + diachi + "'";
+
+            String sql = "exec hoantatdonhang '" + id_donhang + "',N'" + selectedItems + "',N'" + diachi + "'"; 
             _command = new SqlCommand(sql, _connection);
             _command.Connection = _connection;
-            SqlDataReader reader = _command.ExecuteReader();
+            int n = _command.ExecuteNonQuery();
+            if (n > 0)
+                MessageBox.Show("Update successfully !!!");
+            else
+                MessageBox.Show("Error !!!");
 
             Form2 form2 = new Form2();
             form2.id_khachhang = id_khachhang;
@@ -57,20 +75,26 @@ namespace GiaoDien
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
-            //Bước 1: Tạo đối tượng kết nối để CSDL & mở kết nối
             _connection = new SqlConnection(connectionString);
             _connection.Open();
-            //Bước 2: Xây dựng câu lệnh SQL để thực hiện chức năng mong muốn
+
             String sql = "exec huydonhang '" + id_donhang + "'";
-            //Bước 3: Tạo đối tượng thực thi câu lệnh
             _command = new SqlCommand(sql, _connection);
             _command.Connection = _connection;
-            SqlDataReader reader = _command.ExecuteReader();
+            int n = _command.ExecuteNonQuery();
+            if (n > 0)
+                MessageBox.Show("Update successfully !!!");
+            else
+                MessageBox.Show("Error !!!");
 
             Form2 form2 = new Form2();
             form2.id_khachhang = id_khachhang;
             form2.Show();
             this.Close();
         }
+
+
+
+
     }
 }

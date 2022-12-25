@@ -22,7 +22,7 @@ namespace GiaoDien
         public Form2_1()
         {
             InitializeComponent();
-            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=DOAN;Integrated Security=True";
+            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
 
         }
         public String id_khachhang;
