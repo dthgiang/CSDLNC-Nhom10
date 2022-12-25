@@ -32,17 +32,17 @@ namespace GiaoDien
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.hoten_txtBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.email_txtBox = new System.Windows.Forms.TextBox();
+            this.diachi_txtBox = new System.Windows.Forms.TextBox();
+            this.sdt_txtBox = new System.Windows.Forms.TextBox();
+            this.stk_txtBox = new System.Windows.Forms.TextBox();
+            this.nganhang_txtBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,13 +70,13 @@ namespace GiaoDien
             this.label1.TabIndex = 1;
             this.label1.Text = "Họ và tên:";
             // 
-            // textBox1
+            // hoten_txtBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(355, 174);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(317, 22);
-            this.textBox1.TabIndex = 2;
+            this.hoten_txtBox.Location = new System.Drawing.Point(355, 174);
+            this.hoten_txtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.hoten_txtBox.Name = "hoten_txtBox";
+            this.hoten_txtBox.Size = new System.Drawing.Size(317, 22);
+            this.hoten_txtBox.TabIndex = 2;
             // 
             // button1
             // 
@@ -133,45 +133,45 @@ namespace GiaoDien
             this.label5.TabIndex = 7;
             this.label5.Text = "Số tài khoản:";
             // 
-            // textBox2
+            // email_txtBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(355, 213);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(317, 22);
-            this.textBox2.TabIndex = 8;
+            this.email_txtBox.Location = new System.Drawing.Point(355, 213);
+            this.email_txtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.email_txtBox.Name = "email_txtBox";
+            this.email_txtBox.Size = new System.Drawing.Size(317, 22);
+            this.email_txtBox.TabIndex = 8;
             // 
-            // textBox3
+            // diachi_txtBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(355, 250);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(317, 22);
-            this.textBox3.TabIndex = 9;
+            this.diachi_txtBox.Location = new System.Drawing.Point(355, 250);
+            this.diachi_txtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.diachi_txtBox.Name = "diachi_txtBox";
+            this.diachi_txtBox.Size = new System.Drawing.Size(317, 22);
+            this.diachi_txtBox.TabIndex = 9;
             // 
-            // textBox4
+            // sdt_txtBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(355, 288);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(317, 22);
-            this.textBox4.TabIndex = 10;
+            this.sdt_txtBox.Location = new System.Drawing.Point(355, 288);
+            this.sdt_txtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.sdt_txtBox.Name = "sdt_txtBox";
+            this.sdt_txtBox.Size = new System.Drawing.Size(317, 22);
+            this.sdt_txtBox.TabIndex = 10;
             // 
-            // textBox5
+            // stk_txtBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(355, 367);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(317, 22);
-            this.textBox5.TabIndex = 11;
+            this.stk_txtBox.Location = new System.Drawing.Point(355, 367);
+            this.stk_txtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.stk_txtBox.Name = "stk_txtBox";
+            this.stk_txtBox.Size = new System.Drawing.Size(317, 22);
+            this.stk_txtBox.TabIndex = 11;
             // 
-            // textBox6
+            // nganhang_txtBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(355, 326);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(317, 22);
-            this.textBox6.TabIndex = 13;
+            this.nganhang_txtBox.Location = new System.Drawing.Point(355, 326);
+            this.nganhang_txtBox.Margin = new System.Windows.Forms.Padding(4);
+            this.nganhang_txtBox.Name = "nganhang_txtBox";
+            this.nganhang_txtBox.Size = new System.Drawing.Size(317, 22);
+            this.nganhang_txtBox.TabIndex = 13;
             // 
             // label6
             // 
@@ -202,18 +202,18 @@ namespace GiaoDien
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(915, 480);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.nganhang_txtBox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.stk_txtBox);
+            this.Controls.Add(this.sdt_txtBox);
+            this.Controls.Add(this.diachi_txtBox);
+            this.Controls.Add(this.email_txtBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.hoten_txtBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -230,17 +230,17 @@ namespace GiaoDien
 
         private PictureBox pictureBox1;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox hoten_txtBox;
         private Button button1;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox email_txtBox;
+        private TextBox diachi_txtBox;
+        private TextBox sdt_txtBox;
+        private TextBox stk_txtBox;
+        private TextBox nganhang_txtBox;
         private Label label6;
         private Button button2;
     }

@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.CN_cbb = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.XemThucDon_btn = new System.Windows.Forms.Button();
+            this.DSTD_Grid = new System.Windows.Forms.DataGridView();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DSTD_Grid)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox3
+            // CN_cbb
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.CN_cbb.FormattingEnabled = true;
+            this.CN_cbb.Items.AddRange(new object[] {
             "Chi nhánh 1",
             "Chi nhánh 2",
             "Chi nhánh 3"});
-            this.comboBox3.Location = new System.Drawing.Point(187, 37);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(132, 24);
-            this.comboBox3.TabIndex = 5;
+            this.CN_cbb.Location = new System.Drawing.Point(187, 37);
+            this.CN_cbb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CN_cbb.Name = "CN_cbb";
+            this.CN_cbb.Size = new System.Drawing.Size(132, 24);
+            this.CN_cbb.TabIndex = 5;
             // 
             // label2
             // 
@@ -85,26 +85,27 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Tủy chỉnh thực đơn";
             // 
-            // button2
+            // XemThucDon_btn
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(341, 33);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(171, 30);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Xem thực đơn";
-            this.button2.UseVisualStyleBackColor = true;
+            this.XemThucDon_btn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.XemThucDon_btn.Location = new System.Drawing.Point(341, 33);
+            this.XemThucDon_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.XemThucDon_btn.Name = "XemThucDon_btn";
+            this.XemThucDon_btn.Size = new System.Drawing.Size(171, 30);
+            this.XemThucDon_btn.TabIndex = 6;
+            this.XemThucDon_btn.Text = "Xem thực đơn";
+            this.XemThucDon_btn.UseVisualStyleBackColor = true;
+            this.XemThucDon_btn.Click += new System.EventHandler(this.XemThucDon_btn_Click);
             // 
-            // dataGridView1
+            // DSTD_Grid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 144);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(964, 379);
-            this.dataGridView1.TabIndex = 7;
+            this.DSTD_Grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DSTD_Grid.Location = new System.Drawing.Point(17, 144);
+            this.DSTD_Grid.Margin = new System.Windows.Forms.Padding(4);
+            this.DSTD_Grid.Name = "DSTD_Grid";
+            this.DSTD_Grid.RowHeadersWidth = 51;
+            this.DSTD_Grid.Size = new System.Drawing.Size(964, 379);
+            this.DSTD_Grid.TabIndex = 7;
             // 
             // vScrollBar1
             // 
@@ -120,16 +121,17 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1032, 538);
             this.Controls.Add(this.vScrollBar1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.DSTD_Grid);
+            this.Controls.Add(this.XemThucDon_btn);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.CN_cbb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form13";
             this.Text = "QUẢN LÍ THỰC ĐƠN";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Form13_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DSTD_Grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,12 +139,12 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox CN_cbb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button XemThucDon_btn;
+        private System.Windows.Forms.DataGridView DSTD_Grid;
         private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }

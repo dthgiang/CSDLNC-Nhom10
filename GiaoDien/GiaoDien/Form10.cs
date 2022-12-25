@@ -14,9 +14,11 @@ namespace GiaoDien
     public partial class Form10 : Form
     {
         String connectionString = "";
+        public String id_doitac;
         public Form10()
         {
             InitializeComponent();
+            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
         }
 
         public Form10(String madoitac)
@@ -28,9 +30,6 @@ namespace GiaoDien
         {
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
-
-
-
             connection.Close();
         }
     }

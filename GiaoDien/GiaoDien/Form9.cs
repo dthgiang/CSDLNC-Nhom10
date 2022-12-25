@@ -18,7 +18,7 @@ namespace GiaoDien
         public Form9()
         {
             InitializeComponent();
-            connectionString = "";
+            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
         }
 
         private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -29,6 +29,7 @@ namespace GiaoDien
         private void chỉnhSửaThôngTinToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form10 form = new Form10();
+            form.id_doitac = id_doitac;
             form.Show();
         }
 
@@ -41,12 +42,14 @@ namespace GiaoDien
         private void quảnLíThựcĐơnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form13 form = new Form13();
+            form.id_doitac = id_doitac;
             form.Show();
         }
 
         private void quảnLíCNoolStripMenuItem_Click_Click(object sender, EventArgs e)
         {
             Form12 form = new Form12();
+            form.id_doitac = id_doitac;
             form.Show();
         }
 
