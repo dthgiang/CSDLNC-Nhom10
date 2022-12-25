@@ -36,7 +36,8 @@ namespace GiaoDien
         String connectionString = "";
         public Form7()
         {
-            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
+            connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["connection_string"].ConnectionString;
+            //connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
             InitializeComponent();
         }
 

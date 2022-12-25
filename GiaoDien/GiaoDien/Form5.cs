@@ -23,7 +23,8 @@ namespace GiaoDien
         public Form5()
         {
             InitializeComponent();
-            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
+            connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["connection_string"].ConnectionString;
+            //connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
         }
 
         private void btnTiepTuc_Click(object sender, EventArgs e)

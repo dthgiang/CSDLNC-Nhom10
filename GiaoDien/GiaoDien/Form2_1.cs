@@ -22,8 +22,8 @@ namespace GiaoDien
         public Form2_1()
         {
             InitializeComponent();
-            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
-
+            //connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
+            connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["connection_string"].ConnectionString;
         }
         public String id_khachhang;
         public String hoten;

@@ -23,8 +23,8 @@ namespace GiaoDien
         public Form4()
         {
             InitializeComponent();
-            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
-
+            //connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
+            connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["connection_string"].ConnectionString;
         }
         public string id_donhang;
         private void Form4_Load(object sender, EventArgs e)

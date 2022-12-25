@@ -21,9 +21,9 @@ namespace GiaoDien
         public Form3()
         {
             InitializeComponent();
-            connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
+            //connectionString = @"Data Source=MSI\HIENTHU;Initial Catalog=CSDLNC2;Integrated Security=True";
             //dataGridView1.AutoGenerateColumns = false;
-
+            connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["connection_string"].ConnectionString;
         }
 
         private void Form3_Load(object sender, EventArgs e)
