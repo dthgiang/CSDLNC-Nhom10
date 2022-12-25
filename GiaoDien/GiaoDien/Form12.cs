@@ -57,5 +57,57 @@ namespace GiaoDien
 
             connection.Close();
         }
+
+        private void Form12_Load(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            String sqlQuery = String.Format("SELECT * FROM CHINHANH WHERE MADOITAC = '{0}'", id_doitac);
+
+            SqlDataAdapter CNadapter = new SqlDataAdapter(sqlQuery, connection);
+            DataTable CNtable = new DataTable();
+
+            CNadapter.Fill(CNtable);
+
+            CN_cbb.ValueMember = "MaChiNhanh";
+            CN_cbb.DisplayMember = "MaChiNhanh";
+            CN_cbb.DataSource = CNtable;
+            CN_cbb.SelectedItem = -1;
+
+            connection.Close();
+        }
+
+        private void xoaCN_btn_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+
+            DataRowView row = (DataRowView)CN_cbb.SelectedItem;
+            String branchID = (String)row.Row["MaChiNhanh"];
+
+            String procname = "xoaChiNhanh";
+            SqlCommand command = new SqlCommand(procname);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Connection = connection;
+
+            
+            command.Parameters.Add("@MaChiNhanh", SqlDbType.Char);
+            command.Parameters["@MaChiNhanh"].Value = branchID;
+
+            int n = command.ExecuteNonQuery();
+            if (n > 0)
+            {
+                Console.OutputEncoding = Encoding.Unicode;
+                MessageBox.Show("Xóa thành công!!!");
+            }
+
+            else
+            {
+                Console.OutputEncoding = Encoding.Unicode;
+                MessageBox.Show("Xóa thất bại!!!");
+            }
+
+            connection.Close();
+        }
     }
 }

@@ -51,9 +51,9 @@
             this.themDiaChiCN_txtBox = new System.Windows.Forms.TextBox();
             this.themTenNH_txtBox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.xoaCN_btn = new System.Windows.Forms.Button();
+            this.CN_cbb = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // notifyIcon1
@@ -261,14 +261,6 @@
             this.label13.TabIndex = 11;
             this.label13.Text = "Xóa chi nhánh";
             // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(396, 415);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(223, 22);
-            this.textBox11.TabIndex = 13;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -279,16 +271,25 @@
             this.label14.TabIndex = 12;
             this.label14.Text = "Mã chi nhánh";
             // 
-            // button1
+            // xoaCN_btn
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(653, 409);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 33);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Xóa chi nhánh";
-            this.button1.UseVisualStyleBackColor = true;
+            this.xoaCN_btn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xoaCN_btn.Location = new System.Drawing.Point(653, 409);
+            this.xoaCN_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.xoaCN_btn.Name = "xoaCN_btn";
+            this.xoaCN_btn.Size = new System.Drawing.Size(165, 33);
+            this.xoaCN_btn.TabIndex = 14;
+            this.xoaCN_btn.Text = "Xóa chi nhánh";
+            this.xoaCN_btn.UseVisualStyleBackColor = true;
+            this.xoaCN_btn.Click += new System.EventHandler(this.xoaCN_btn_Click);
+            // 
+            // CN_cbb
+            // 
+            this.CN_cbb.FormattingEnabled = true;
+            this.CN_cbb.Location = new System.Drawing.Point(405, 416);
+            this.CN_cbb.Name = "CN_cbb";
+            this.CN_cbb.Size = new System.Drawing.Size(215, 24);
+            this.CN_cbb.TabIndex = 15;
             // 
             // Form12
             // 
@@ -296,8 +297,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(913, 478);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.CN_cbb);
+            this.Controls.Add(this.xoaCN_btn);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.themTenNH_txtBox);
@@ -323,6 +324,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form12";
             this.Text = " QUẢN LÍ CHI NHÁNH";
+            this.Load += new System.EventHandler(this.Form12_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,8 +354,8 @@
         private System.Windows.Forms.TextBox themDiaChiCN_txtBox;
         private System.Windows.Forms.TextBox themTenNH_txtBox;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button xoaCN_btn;
+        private System.Windows.Forms.ComboBox CN_cbb;
     }
 }
