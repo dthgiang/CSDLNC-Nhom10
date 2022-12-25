@@ -42,13 +42,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.madoitac_label = new System.Windows.Forms.Label();
-            this.tendoitac_label = new System.Windows.Forms.Label();
-            this.nasothue_label = new System.Windows.Forms.Label();
-            this.tenndd_label = new System.Windows.Forms.Label();
-            this.email_label = new System.Windows.Forms.Label();
-            this.sdt_label = new System.Windows.Forms.Label();
             this.diachi_label = new System.Windows.Forms.Label();
+            this.sdt_label = new System.Windows.Forms.Label();
+            this.email_label = new System.Windows.Forms.Label();
+            this.tenndd_label = new System.Windows.Forms.Label();
+            this.masothue_label = new System.Windows.Forms.Label();
+            this.tendoitac_label = new System.Windows.Forms.Label();
+            this.madoitac_label = new System.Windows.Forms.Label();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -164,7 +164,7 @@
             this.panel1.Controls.Add(this.sdt_label);
             this.panel1.Controls.Add(this.email_label);
             this.panel1.Controls.Add(this.tenndd_label);
-            this.panel1.Controls.Add(this.nasothue_label);
+            this.panel1.Controls.Add(this.masothue_label);
             this.panel1.Controls.Add(this.tendoitac_label);
             this.panel1.Controls.Add(this.madoitac_label);
             this.panel1.Location = new System.Drawing.Point(43, 126);
@@ -172,50 +172,14 @@
             this.panel1.Size = new System.Drawing.Size(649, 278);
             this.panel1.TabIndex = 12;
             // 
-            // madoitac_label
+            // diachi_label
             // 
-            this.madoitac_label.AutoSize = true;
-            this.madoitac_label.Location = new System.Drawing.Point(18, 18);
-            this.madoitac_label.Name = "madoitac_label";
-            this.madoitac_label.Size = new System.Drawing.Size(81, 17);
-            this.madoitac_label.TabIndex = 0;
-            this.madoitac_label.Text = "Mã đối tác: ";
-            // 
-            // tendoitac_label
-            // 
-            this.tendoitac_label.AutoSize = true;
-            this.tendoitac_label.Location = new System.Drawing.Point(18, 60);
-            this.tendoitac_label.Name = "tendoitac_label";
-            this.tendoitac_label.Size = new System.Drawing.Size(87, 17);
-            this.tendoitac_label.TabIndex = 1;
-            this.tendoitac_label.Text = "Tên đối tác: ";
-            // 
-            // nasothue_label
-            // 
-            this.nasothue_label.AutoSize = true;
-            this.nasothue_label.Location = new System.Drawing.Point(19, 101);
-            this.nasothue_label.Name = "nasothue_label";
-            this.nasothue_label.Size = new System.Drawing.Size(82, 17);
-            this.nasothue_label.TabIndex = 2;
-            this.nasothue_label.Text = "Mã số thuế:";
-            // 
-            // tenndd_label
-            // 
-            this.tenndd_label.AutoSize = true;
-            this.tenndd_label.Location = new System.Drawing.Point(18, 140);
-            this.tenndd_label.Name = "tenndd_label";
-            this.tenndd_label.Size = new System.Drawing.Size(134, 17);
-            this.tenndd_label.TabIndex = 3;
-            this.tenndd_label.Text = "Tên người đại diện: ";
-            // 
-            // email_label
-            // 
-            this.email_label.AutoSize = true;
-            this.email_label.Location = new System.Drawing.Point(18, 175);
-            this.email_label.Name = "email_label";
-            this.email_label.Size = new System.Drawing.Size(50, 17);
-            this.email_label.TabIndex = 4;
-            this.email_label.Text = "Email: ";
+            this.diachi_label.AutoSize = true;
+            this.diachi_label.Location = new System.Drawing.Point(18, 246);
+            this.diachi_label.Name = "diachi_label";
+            this.diachi_label.Size = new System.Drawing.Size(59, 17);
+            this.diachi_label.TabIndex = 6;
+            this.diachi_label.Text = "Địa chỉ: ";
             // 
             // sdt_label
             // 
@@ -226,14 +190,50 @@
             this.sdt_label.TabIndex = 5;
             this.sdt_label.Text = "Số điện thoại: ";
             // 
-            // diachi_label
+            // email_label
             // 
-            this.diachi_label.AutoSize = true;
-            this.diachi_label.Location = new System.Drawing.Point(18, 246);
-            this.diachi_label.Name = "diachi_label";
-            this.diachi_label.Size = new System.Drawing.Size(59, 17);
-            this.diachi_label.TabIndex = 6;
-            this.diachi_label.Text = "Địa chỉ: ";
+            this.email_label.AutoSize = true;
+            this.email_label.Location = new System.Drawing.Point(18, 175);
+            this.email_label.Name = "email_label";
+            this.email_label.Size = new System.Drawing.Size(50, 17);
+            this.email_label.TabIndex = 4;
+            this.email_label.Text = "Email: ";
+            // 
+            // tenndd_label
+            // 
+            this.tenndd_label.AutoSize = true;
+            this.tenndd_label.Location = new System.Drawing.Point(18, 140);
+            this.tenndd_label.Name = "tenndd_label";
+            this.tenndd_label.Size = new System.Drawing.Size(134, 17);
+            this.tenndd_label.TabIndex = 3;
+            this.tenndd_label.Text = "Tên người đại diện: ";
+            // 
+            // masothue_label
+            // 
+            this.masothue_label.AutoSize = true;
+            this.masothue_label.Location = new System.Drawing.Point(19, 101);
+            this.masothue_label.Name = "masothue_label";
+            this.masothue_label.Size = new System.Drawing.Size(82, 17);
+            this.masothue_label.TabIndex = 2;
+            this.masothue_label.Text = "Mã số thuế:";
+            // 
+            // tendoitac_label
+            // 
+            this.tendoitac_label.AutoSize = true;
+            this.tendoitac_label.Location = new System.Drawing.Point(18, 60);
+            this.tendoitac_label.Name = "tendoitac_label";
+            this.tendoitac_label.Size = new System.Drawing.Size(87, 17);
+            this.tendoitac_label.TabIndex = 1;
+            this.tendoitac_label.Text = "Tên đối tác: ";
+            // 
+            // madoitac_label
+            // 
+            this.madoitac_label.AutoSize = true;
+            this.madoitac_label.Location = new System.Drawing.Point(18, 18);
+            this.madoitac_label.Name = "madoitac_label";
+            this.madoitac_label.Size = new System.Drawing.Size(81, 17);
+            this.madoitac_label.TabIndex = 0;
+            this.madoitac_label.Text = "Mã đối tác: ";
             // 
             // Form9
             // 
@@ -282,7 +282,7 @@
         private System.Windows.Forms.Label sdt_label;
         private System.Windows.Forms.Label email_label;
         private System.Windows.Forms.Label tenndd_label;
-        private System.Windows.Forms.Label nasothue_label;
+        private System.Windows.Forms.Label masothue_label;
         private System.Windows.Forms.Label tendoitac_label;
         private System.Windows.Forms.Label madoitac_label;
     }

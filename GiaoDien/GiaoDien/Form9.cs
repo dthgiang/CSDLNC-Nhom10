@@ -18,6 +18,7 @@ namespace GiaoDien
         public Form9()
         {
             InitializeComponent();
+            connectionString = "";
         }
 
         private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -59,7 +60,29 @@ namespace GiaoDien
             SqlConnection connection = new SqlConnection(connectionString);
             connection.Open();
 
-            
+            // chay proc xem thong tin doi tac
+            String procname = "thongtindoitac";
+            SqlCommand command = new SqlCommand(procname);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Connection = connection;
+
+            // truyen tham so madt vao proc
+            command.Parameters.Add("@madt", SqlDbType.Char);
+            command.Parameters["@madt"].Value = id_doitac;
+
+            // chay reader
+            SqlDataReader reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                Console.OutputEncoding = Encoding.Unicode;
+                madoitac_label.Text = "Mã đối tác: " + reader["MaDoiTac"].ToString();
+                tendoitac_label.Text = "Tên đối tác: " + reader["TenDoiTac"].ToString();
+                masothue_label.Text = "Mã số thuế: " + reader["MaSoThue"].ToString();
+                tenndd_label.Text = "Tên người đại diện: " + reader["TenNguoiDaiDien"].ToString();
+                email_label.Text = "Email: " + reader["email"].ToString();
+                sdt_label.Text = "Số điện thoại: " + reader["SoDienThoai"].ToString();
+                diachi_label.Text = "Địa chỉ: " + reader["DiaChi"].ToString();
+            }
 
             connection.Close();
         }
