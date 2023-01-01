@@ -46,9 +46,10 @@ namespace GiaoDien
             SqlDataAdapter adapter = new SqlDataAdapter("exec dsdonhang '" + id_khuvuc + "'", connection);
             DataTable table = new DataTable();
             adapter.Fill(table);
-            cbbDSDonHang.ValueMember = "makhachhang";
-            cbbDSDonHang.DisplayMember = "madonhang";
+
             cbbDSDonHang.DataSource = table;
+            cbbDSDonHang.ValueMember = "makhachhang";
+            cbbDSDonHang.DisplayMember = "MaDonHang";
             cbbDSDonHang.SelectedIndex = -1;
 
             dataGridView1.DataSource = table;
@@ -58,8 +59,8 @@ namespace GiaoDien
         {
             Form8_1 f = new Form8_1();
             DataRowView row = (DataRowView)cbbDSDonHang.SelectedItem;
-            id_donhang = (String)row.Row["madonhang"];
-            f.id_donhang = (String)row.Row["madonhang"];
+            id_donhang = (String)row.Row["MaDonHang"];
+            f.id_donhang = (String)row.Row["MaDonHang"];
             f.id_khachhang= (String)row.Row["makhachhang"];
             f.id_taixe = id_taixe;
             _connection = new SqlConnection(connectionString);
